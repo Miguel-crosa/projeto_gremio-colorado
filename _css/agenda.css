@@ -24,34 +24,32 @@ h1 {
     align-items: center;
 }
 
+#agenda {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    translate: -50%-50%;
+    width: 50%;
+    height: 70%;
+    border: 5px solid #645419;
+    background-color: #ffffff;
+}
 
-#imagens-cima {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+table {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+th {
+    border: 2px solid black;
+    width: 25%;
+    height: 5%;
+    background-color: #CFB645;
+}
+
+td {
+    border: 2px solid black;
     text-align: center;
-}
-
-#imagens-baixo {
-    display: flex;
-    justify-content: space-around;
-}
-
-img {
-    margin-top: 15px;
-    width: 15%;
-    border: 2px solid #D5D3CA;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-#imagens-cima img:hover {
-    scale: 1.4;
-    transform: rotateZ(12deg);
-    position: relative;
-}
-
-#imagens-baixo img:hover {
-    scale: 1.4;
-    transform: rotateZ(-12deg);
+    background-color: #D5D3CA;
 }
