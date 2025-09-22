@@ -1,0 +1,8 @@
+.menu-principal {
+    display: flex;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
