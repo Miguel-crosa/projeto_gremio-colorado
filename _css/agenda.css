@@ -53,3 +53,22 @@ td {
     text-align: center;
     background-color: #D5D3CA;
 }
+
+button {
+    padding: 20px 20px;
+    width: 120px;
+    border-radius: 8px;
+    border: solid #645419 3px;
+    background-color: #E5322A;
+    color: #D5D3CA;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.25s;
+    position: absolute;
+    left: 90%;
+    top: 90%;
+}
+
+button:hover {
+    scale: 1.2;
+}
