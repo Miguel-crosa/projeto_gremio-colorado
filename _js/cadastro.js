@@ -51,6 +51,15 @@ function converterJson() {
 
 document.getElementById("fechar").addEventListener('click', function () {
 
-    modal.style.display = 'none';
+    modal.style.animation = "modal-fechar 0.25s ease-out";
+
+
+    const loop = setInterval(() => {
+
+        modal.style.display = 'none';
+        
+    }, 220);
+
+    
 
 });
