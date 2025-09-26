@@ -48,6 +48,8 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 125px;
+    margin-top: 76px;
 }
 
 #imagens-baixo {
@@ -57,19 +59,57 @@ button:hover {
 
 img {
     margin-top: 15px;
-    width: 15%;
+    width: 17%;
     border: 2px solid #D5D3CA;
     cursor: pointer;
     transition: 0.25s;
 }
 
+
+img:hover {
+    border-color: #E5322A;
+    box-shadow: 0px 0px 24px #E5322A;
+}
+
 #imagens-cima img:hover {
-    scale: 1.4;
-    transform: rotateZ(12deg);
+    scale: 1.2;
+    transform: rotateZ(5deg);
     position: relative;
 }
 
 #imagens-baixo img:hover {
-    scale: 1.4;
-    transform: rotateZ(-12deg);
+    scale: 1.2;
+    transform: rotateZ(-5deg);
+}
+
+#roblox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50%-50%;
+    width: 35%;
+    opacity: 0;
+    display: none;
+}
+
+@keyframes roblox-animation {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
 }

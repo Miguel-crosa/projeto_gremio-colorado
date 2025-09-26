@@ -27,6 +27,7 @@ button {
 
 button:hover {
     scale: 1.2;
+    box-shadow: 0px 0px 10px #E5322A;
 }
 
 #btn-1 {

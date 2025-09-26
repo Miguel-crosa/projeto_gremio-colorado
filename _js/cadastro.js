@@ -1,4 +1,5 @@
 var modal = document.querySelector(".json-informacoes");
+var divSecreta = document.getElementById("segredo");
 
 function validarDados() {
     const nome = document.getElementById('nome').value;
@@ -32,6 +33,8 @@ function converterJson() {
 
     modal.style.display = 'flex';
 
+    modal.style.animation = "modal-json 0.25s ease-out";
+
     const dadosJson = {};
 
     dadosJson.nome = document.querySelector('#nome').value;
@@ -40,7 +43,7 @@ function converterJson() {
     dadosJson.idade = document.querySelector('#idade').value;
     dadosJson.turma = document.querySelector('#turma').value;
     dadosJson.esporte = document.querySelector('.esporte').value;
-    dadosJson.novidade = document.querySelector('#radio-escolha').value;
+    dadosJson.novidade = document.querySelector('input[name="escolha"]:checked').value;
 
     const json = JSON.stringify(dadosJson);
 
@@ -54,12 +57,23 @@ document.getElementById("fechar").addEventListener('click', function () {
     modal.style.animation = "modal-fechar 0.25s ease-out";
 
 
-    const loop = setInterval(() => {
-
+    const intervalo = setTimeout(() => {
         modal.style.display = 'none';
-        
     }, 220);
 
-    
+
+
+});
+
+divSecreta.addEventListener("click", function () {
+
+    let img = document.querySelector("img[src='_imagens/gremio-colorado.png']");
+
+    img.src = './_imagens/robertinho.png';
+    document.body.style.backgroundColor = 'pink';
+    document.body.style.backgroundImage = 'url(./_imagens/coracao.jpg)';
+  
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.color = 'black';
 
 });

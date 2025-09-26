@@ -13,8 +13,12 @@
     <section class="conteudo-principal">
         <h1>Formulário para Cadastro</h1>
         <button id="voltar" onclick="window.location.href='index.html'">Voltar</button>
+
+        <div id="segredo"></div>
+
         <form method="get" action="sucesso.html" onsubmit=" return validarDados()">
             <div class="area-um">
+
                 <label for="nome">Nome: <br>
                 </label>
                 <input type="text" name="nome" id="nome">
@@ -34,7 +38,9 @@
                 <label for="turma">Turma: <br>
                 </label>
                 <input type="text" name="turma" id="turma">
+
             </div>
+
             <br><br>
             <div class="esporte">
                 <p id="esporte-label">Esporte favorito:</p>
