@@ -15,8 +15,15 @@
 }
 
 h1 {
-    text-align: center;
-    font-size: 20px;
+    font-size: 35px;
+    position: relative;
+    left: 40%;
+    top: 15px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-decoration-color: #E5322A;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 4px;
 }
 
 #voltar {
@@ -44,7 +51,6 @@ input {
     height: 25px;
     cursor: pointer;
     transition: 0.25s;
-    font-weight: bold;
     font-size: 20px;
 }
 
@@ -240,13 +246,15 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     z-index: 9999;
     animation: none;
 }
 
 #texto-div {
-    font-size: 15px;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    top: -5%;
 }
 
 #fechar {
@@ -260,7 +268,7 @@ button:hover {
     font-weight: bolder;
     color: white;
     position: relative;
-    top: -49%;
+    top: -45%;
     left: 51%;
 }
 

@@ -6,6 +6,8 @@ let ronaldo = document.getElementById("roblox");
 let body = document.body;
 let imagensCima = document.getElementById("imagens-cima");
 let imagensBaixo = document.getElementById("imagens-baixo")
+let miguel = document.querySelector(".miguel");
+let trovao = document.querySelector(".trovao");
 
 let num = 0;
 var num2 = 0;
@@ -53,6 +55,7 @@ imagem4.addEventListener("click", function () {
     } else if (num2 == 3) {
         ronaldo.style.display = 'flex';
         ronaldo.style.animation = 'roblox-animation 5s linear';
+        trovao.play();
 
         const intervalo = setTimeout(() => {
             ronaldo.style.display = 'none';
@@ -63,6 +66,7 @@ imagem4.addEventListener("click", function () {
     }
 
     else {
+        miguel.play();
         alert("ronaldo");
     }
 });

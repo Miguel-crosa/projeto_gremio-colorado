@@ -1,5 +1,7 @@
 var modal = document.querySelector(".json-informacoes");
 var divSecreta = document.getElementById("segredo");
+let musica = document.querySelector(".robs-princesa");
+var num = 0;
 
 function validarDados() {
     const nome = document.getElementById('nome').value;
@@ -67,13 +69,26 @@ document.getElementById("fechar").addEventListener('click', function () {
 
 divSecreta.addEventListener("click", function () {
 
-    let img = document.querySelector("img[src='_imagens/gremio-colorado.png']");
+    num += 1;
 
-    img.src = './_imagens/robertinho.png';
-    document.body.style.backgroundColor = 'pink';
-    document.body.style.backgroundImage = 'url(./_imagens/coracao.jpg)';
-  
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.color = 'black';
+    // DEIXAR OS LABELS ROSAS
 
+    let img = document.getElementById("imgIcone");
+
+    if (num % 2 == 0) {
+        img.src = './_imagens/gremio-colorado.png';
+        document.body.style.backgroundColor = '#121211';
+        document.body.style.backgroundImage = '';
+        document.body.style.color = '#D5D3CA';
+        musica.pause();
+        musica.currentTime = 0;
+    }
+    else {
+        img.src = './_imagens/robertinho.png';
+        document.body.style.backgroundColor = 'pink';
+        document.body.style.backgroundImage = 'url(./_imagens/coracao.jpg)';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.color = '#D5D3CA';
+        musica.play();
+    }
 });
